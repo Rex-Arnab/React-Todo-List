@@ -1,38 +1,53 @@
-.App {
+body {
+  background-color: #00838F;
+}
+
+header{
+  background-color: #37474F;
+  margin: 10px auto;
+  width: 400px;
   text-align: center;
+  color: #fff;
+  font-size: 40px;
+  padding: 5px 0;
+  box-shadow: 5px 5px 5px #00575f;
+}
+.App{
+  background-color: #CFD8DC;
+  min-height: 500px;
+  width: 400px;
+  margin: 40px auto;
+  box-shadow: 5px 5px 5px 2px #00575f;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#to-do-list input{
+  background-color: rgb(30, 170, 212);
+  border: 0;
+  width: 200px;
+  height: 50px;
+  padding: 0 20px;
+  margin: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: #FAFAFA;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#to-do-list input:focus{
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#to-do-list input::placeholder{
+  color: rgba(255,255,255,0.5);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#to-do-list button{
+  height: 50px;
+  width: 80px;
+  border-radius: 5px;
+  border: 0;
+  background-color: rgb(182, 109, 14);
+  cursor: pointer;
+  font-weight: bolder;
+  color: #FAFAFA;
+  outline: none;
 }
